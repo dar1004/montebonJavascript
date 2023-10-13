@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JavaScript Event</title>
+    </head>
+    <body>
+        <p>Modify the text in the input field, then click outside the field to fire the onchange event.</p>
+
+        &nbsp;&nbsp;<p>Enter some text: <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)" color="white"></p>
+
+        <script>
+            function myFunction(val){
+                alert("The input value has changed. The new value is: " + val);
+            
+            }
+        </script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            p{
+                color: white;
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            body{
+                background-color: darkslategray;
+            }
+        </style>
+    </body>
+</html>

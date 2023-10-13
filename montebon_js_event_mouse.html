@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JavaScript Event</title>
+    </head>
+    <body>
+        <p>This activity demonstrate how to assign an "onmouseover" and "onmouseout" event to a h1 element</p>
+        <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h1>
+        <script>
+            function mouseOver(){
+                document.getElementById("demo").style.color ="red";
+
+            }
+            function mouseOut(){
+                document.getElementById("demo").style.color ="black";
+
+            }
+        </script>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                body{
+                    background-image: url('images/background.jpg');
+                }
+                p{
+                    color: darkslategray;
+                    margin-top: 25px;
+                    margin-left: 10px;
+                    font-family: Arial;
+                }
+               
+                h1{
+                    font-family: Arial;
+                    margin-top: 25px;
+                    margin-left: 10px;
+                }
+                </style>
+</body>
+</html>
+
+        
